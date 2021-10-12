@@ -1,5 +1,5 @@
 // Load node modules
-const colors = require('colors');
+
 const dotenv = require('dotenv');
 const fs = require('fs');
 
@@ -45,6 +45,6 @@ fs.writeFile(targetPath, envConfigFile, (err: any) => {
   if (err) {
     throw console.error(err);
   } else {
-    console.log(colors.magenta(`Angular environment.ts file generated correctly at ${targetPath} \n`));
+    console.log(`Angular environment.ts file generated correctly at ${targetPath} \n`);
   }
 });
